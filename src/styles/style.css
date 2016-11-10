@@ -1,0 +1,33 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 80px;
+    /* Push content below navbar */
+    margin-top: 120px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 70px;
+    background-color: #ddd;
+    border-top: 1px solid #999;
+}
+
+.navbar {
+    background-color: #005b8a;
+    height: 100px;
+}
+
+.search-box {
+    margin-bottom: 20px;
+}
