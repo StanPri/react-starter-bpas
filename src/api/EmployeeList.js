@@ -1,4 +1,4 @@
-[
+const Employees = [
 	{
 		"SamAccountName": "Eabdulra",
 		"Department": "Procurement & Contracting Serv",
@@ -18334,4 +18334,6 @@
 		"Manager": "Christine Wu",
 		"FullName": "Joe Zou"
 	}
-]
+];
+
+export default Employees;

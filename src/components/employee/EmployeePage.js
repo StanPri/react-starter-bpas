@@ -5,12 +5,10 @@ import EmployeeDetails from './EmployeeDetails';
 import PageNumbers from './PageNumbers';
 import EmployeeResultsList from './EmployeeResultsList';
 import ManagerDetails from './ManagerDetails';
-import Grid from 'react-bootstrap/lib/Grid';
-import Row from 'react-bootstrap/lib/Row';
-import Col from 'react-bootstrap/lib/Col';
-import '../../styles/style.css';
 
-class EmployeeIndex extends React.Component {
+import {Grid, Row, Col} from 'react-bootstrap';
+
+class EmployeePage extends React.Component {
   render() {
     return (
     <Grid fluid>
@@ -41,4 +39,4 @@ class EmployeeIndex extends React.Component {
   }
 }
 
-export default EmployeeIndex;
+export default EmployeePage;

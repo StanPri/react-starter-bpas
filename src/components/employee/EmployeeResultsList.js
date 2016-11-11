@@ -1,7 +1,16 @@
 import React, { PropTypes } from 'react';
 import Table from 'react-bootstrap/lib/Table';
+import Employees from   '../../api/EmployeeList';
 
 class EmployeeResultsList extends React.Component {
+
+  constructor(props) {
+    super (props);
+    this.state = {
+      employees: Employees.slice(0, 14)
+    };
+  }
+
   render () {
     return (
       <Table striped bordered hover>
@@ -13,9 +22,14 @@ class EmployeeResultsList extends React.Component {
           </tr>
         </thead>
         <tbody>
-          <tr>  // repeated for number of entires
-            <td></td> // repeated for number of entiry fields
-          </tr>
+          {Object.keys(this.state.employees).map((key) => {
+              return (<tr key = {key}>
+                <td>{this.state.employees[key]["GivenName"]}</td>
+                <td>{this.state.employees[key]["SurName"]}</td>
+                <td>{this.state.employees[key]["Department"]}</td>
+              </tr> );
+            })
+          }
         </tbody>
       </Table>
     );
