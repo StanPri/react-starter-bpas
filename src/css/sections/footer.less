@@ -1,0 +1,31 @@
+body {
+  margin-bottom: @footer-height;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  min-width: 360px;
+}
+
+.navbar.navbar-static-bottom {
+  min-width: 360px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+  width: 100%;
+  min-height: @footer-height;
+  background-color: @gray-lighter;
+  border-top: 1px solid darken(@gray-lighter, 20%);
+  .text-center;
+}
+
+.version {
+  position:absolute;
+  bottom: 5px;
+  right: 15px;
+  display:none;
+  @media (min-width: @screen-sm-min) {
+    display:block;
+  }
+}
