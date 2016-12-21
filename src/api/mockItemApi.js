@@ -69,7 +69,7 @@ class ItemApi {
     });
   }
 
-  static deleteitem(itemId) {
+  static deleteItem(itemId) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         const indexOfitemToDelete = items.findIndex(item => {
@@ -82,4 +82,4 @@ class ItemApi {
   }
 }
 
-export default itemApi;
+export default ItemApi;
