@@ -2,7 +2,7 @@ import React, {PropTypes} from 'react';
 import {Col, Grid, Row} from 'react-bootstrap';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import * as mainPageActions from '../../actions/mainPageActions';
+import * as itemActions from '../../actions/itemActions';
 
 class MainPage extends React.Component {
   constructor(props) {
@@ -32,7 +32,7 @@ class MainPage extends React.Component {
 
   function mapDispatchToProps(dispatch) {
     return {
-      actions: bindActionCreators(mainPageActions, dispatch)
+      actions: bindActionCreators(itemActions, dispatch)
     };
   }
 
