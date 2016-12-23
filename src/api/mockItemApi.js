@@ -5,29 +5,24 @@ import delay from './delay';
 // All calls return promises.
 const items = [
   {
-    id: "Item-One",
+    id: "1",
     title: "Item One",
-    category: "Simple"
   },
   {
-    id: "Item-Two",
+    id: "2",
     title: "Item Two",
-    category: "Sophisticated"
   },
   {
-    id: "Item-Three",
+    id: "3",
     title: "Item Three",
-    category: "Simple"
   },
   {
-    id: "Item-Four",
+    id: "4",
     title: "Item Four",
-    category: "Simple"
   },
   {
-    id: "Item-Five",
+    id: "5",
     title: "Item Five",
-    category: "Sophisticated"
   }
 ];
 
