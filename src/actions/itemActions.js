@@ -8,7 +8,7 @@ export function loadItemsSuccess(items)
 
 export function createItemSuccess(item)
 {
-  return { type: types.CREATE_ITEM_SUCCESS, item}
+  return { type: types.CREATE_ITEM_SUCCESS, item};
 }
 
 export function loadItems() {
