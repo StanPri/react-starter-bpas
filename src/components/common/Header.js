@@ -4,6 +4,7 @@ import {Navbar, Button} from 'react-bootstrap';
 import json2csv from 'json2csv';
 const ca_gov_logo = require('../../images/ca_gov_logo.png');
 const cio_logo = require('../../images/cio_logo.png');
+import LoadingDots from './LoadingDots';
 
 class Header extends React.Component {
   constructor(props) {
@@ -30,6 +31,10 @@ class Header extends React.Component {
         </div>
         <div className="navbar-collapse collapse hidden" id="navbar">
           <ul className="nav navbar-nav navbar-right">
+            <li>
+              { this.props.loading && <LoadingDots interval={100} dots={20}/> }
+            </li>
+
             <li onClick={toggleMenuOnClick}>
               <IndexLink to="/" activeClassName="active">
                 <Button className="btn-outline">Main Page</Button>
@@ -66,5 +71,9 @@ function sortByKey(array, key) {
         : 0));
   });
 }
+
+Header.propTypes = {
+  loading: PropTypes.bool.isRequired
+};
 
 export default Header;
