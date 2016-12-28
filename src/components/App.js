@@ -7,9 +7,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Header
-          loading={this.props.loading}
-        />
+        <Header/>
         {this.props.children}
         <Footer/>
       </div>
@@ -22,9 +20,4 @@ App.propTypes = {
 };
 
 
-//Updates fetch async status
-function mapStateToProps(state, ownProps){
-  return { loading: state.fetchCallsInProgress > 0 };
-}
-
-export default connect(mapStateToProps)(App);
+export default App;
