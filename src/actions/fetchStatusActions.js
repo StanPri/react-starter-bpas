@@ -1,3 +1,4 @@
+//Keeps track of fetch call status
 import * as types from './actionTypes';
 
 export function beginFetchCall() {
